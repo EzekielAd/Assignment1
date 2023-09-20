@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+button {
+    background-color:black;
+    color:white;
+    height:40px;
+    border:2px white solid;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 5px;
+    }
+    button:hover {
+        background-color:beige;
+        color:black;
+        height:40px;
+        border:2px white solid;
+        box-shadow: -10px -10px 5px black;
+        border-radius: 5px;
+        }  
