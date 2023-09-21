@@ -1,0 +1,170 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(raindrop.jpg);
+}
+.banner{
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    color:#000;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 87px;
+    cursor: pointer;
+    margin: 20px 10px;
+    border-radius: 25px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.heading{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+ position:relative   
+}
+.heading h1:after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+.heading p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.About{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.About-image{
+    flex:1;
+    margin-right: 40px;
+    height: auto;
+    display: block;
+
+}
+.About-image img{
+    width: 60%;
+    height: 60%;
+    display: block;
+    transition: 0.5s ease;
+}
+.About-image:hover img{
+    transform: scale(1.2);
+}
+.About-content{
+    flex:1;
+}
+.About-content h2{
+    font-size:23px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.About-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+.About-content  .read-more{
+    display: inline-block;
+    padding:10ox 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.About-content  .read-more{
+    background-color: #3e8e41;
+}
+@media screen and (max-width: 769px){
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .About{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .About-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .About-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .About-content .read-more{
+        font-size: 16px;
+    }
+}
+  
