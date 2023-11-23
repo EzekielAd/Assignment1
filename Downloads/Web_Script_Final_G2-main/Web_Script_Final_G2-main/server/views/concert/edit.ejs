@@ -1,0 +1,88 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="artistTextField">Artist</label>
+                    <input type="text" class="form-control"
+                    id="artistTextField"
+                    placeholder="Enter the Concert Artist(s)"
+                    name="Artist" 
+                    value="<%= Concert.Artist %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genreTextField">Genre</label>
+                    <input type="text" class="form-control"
+                    id="genreTextField"
+                    placeholder="Enter the Genre of the Concert"
+                    name="Genre" 
+                    value="<%= Concert.Genre %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="venueTextField">Venue</label>
+                    <input type="text" class="form-control"
+                    id="venueTextField"
+                    placeholder="Enter the location of the Concert"
+                    name="Venue" 
+                    value="<%= Concert.Venue %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateTextArea">Date</label>
+                    <textarea type="text" class="form-control"
+                    id="dateTextArea"
+                    placeholder="Enter the date of the Concert"
+                    name="Date" 
+                    value="<%= Concert.Date %>"
+                    required>
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Price</label>
+                    <input type="text" class="form-control"
+                    id="priceTextField"
+                    placeholder="Enter the ticket prices of the Concert"
+                    name="Ticket_Price" 
+                    value="<%= Concert.Ticket_Price %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeTextField">Time</label>
+                    <input type="text" class="form-control"
+                    id="timeTextField"
+                    placeholder="Enter the start time of the Concert"
+                    name="Start_Time" 
+                    value="<%= Concert.Start_Time %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/bookslist" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="Content/logo.png" alt="Profile Image" class="profile-image"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <% if(title == "Home") { %>
+              <a class="nav-link active" href="/">
+            <% } else { %>
+              <a class="nav-link" href="/">
+            <% } %>
+              <i class="fa-solid fa-house-chimney fa-lg"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <% if(title == "About Us") { %>
+              <a class="nav-link active" href="/about">
+            <% } else { %>
+              <a class="nav-link" href="/about">
+            <% } %>
+              <i class="fa-solid fa-building fa-lg"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <% if(title == "Concert List") { %>
+              <a class="nav-link active" href="/concertlist">
+            <% } else { %> 
+              <a class="nav-link" href="/concertlist">
+            <% } %>
+            <i class="fa-solid fa-music fa-lg"></i> Concerts</a>
+          </li>
+            <li class="nav-item">
+            <% if(title == "Contact Us") { %>
+              <a class="nav-link active" href="/contact">
+            <% } else { %> 
+              <a class="nav-link" href="/contact">
+            <% } %>
+            <i class="fa-solid fa-phone-volume fa-lg"></i> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,33 @@
+<% include partials/header.ejs %>
+<% include partials/main_nav.ejs %>
+
+<section id="contact">
+    <div class="container-lg">
+<div class="text-center">
+  <h1 class="display-5">Reach Out to Us Here</h1>
+</div>
+
+<div class="row justify-content-center my-5">
+  <div class="col-lg-6">
+    <form>
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="e.g. Mario" required>
+
+      <label for="email" class="form-label">Email Address:</label>
+      <input type="email" class="form-control" id="email" placeholder="e.g.mario@example.com" required>
+
+      <div class="form-floating mb-4 mt-5">
+        <textarea id="query" class="form-control" style="height: 140px"></textarea>
+        <label for="query" class="form-label">Comments</label>
+      </div>
+
+      <div class="mb-4 text-center">
+        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<% include partials/bottom_nav.ejs %>
+<% include partials/footer.ejs %>
